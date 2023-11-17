@@ -1,0 +1,30 @@
+/*
+ Botões de salvar e limpar do card seção 1
+*/
+.form-btn {
+    width: 250px;
+    height: 50px;
+    background-color: #FF8400;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+}
+
+#btn-modal:hover {
+  cursor: pointer;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-left {
+    margin-right: 10px;
+}
+
+.btn-right {
+    margin-left: 10px;
+}

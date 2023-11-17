@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFVia-Cep</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="nav-container">
+        <nav class="nav-main">
+            <h1>JFVIA-CEP</h1>
+            <div class="link-contact">Contato</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <div class="card-form">
+                <form name="newAddress">
+                    <div class="form-control">
+                        <label for="cep"></label>
+                        <input name="cep" id="cep" class="form-input" type="text" placeholder="CEP">
+                        <div class="error-message" data-error="cep"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="street"></label>
+                        <input name="street" id="street" class="form-input" disabled type="text" placeholder="Logradouro">
+                    </div>
+                    <div class="form-control">
+                        <label for="number"></label>
+                        <input name="number" id="number" class="form-input" type="text" placeholder="Número">
+                        <div class="error-message" data-error="number"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="city"></label>
+                        <input name="city" id="city" class="form-input" disabled type="text" placeholder="Cidade">
+                    </div>
+                    <div class="buttons-container">
+                        <button class="form-btn btn-left" name="btnSave" type="submit">Salvar</button>
+                        <button class="form-btn btn-right" name="btnClear">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="list-section" class="list-container">
+            <div class="card-list-item">
+                <h3 class="city-line">Campos Altos</h3>
+                <p class="address-line">Rua José Alves Ruas, 112</p>
+                <p class="address-cep">38970-000</p>
+            </div>
+
+            <div class="card-list-item">
+                <h3 class="city-line">São Paulo</h3>
+                <p class="address-line">Rua dos Jardins, 720</p>
+                <p class="address-cep">11200-345</p>
+            </div>
+
+            <div class="card-list-item">
+                <h3 class="city-line">Campos Altos</h3>
+                <p class="address-line">Rua José Alves Ruas, 112</p>
+                <p class="address-cep">38970-000</p>
+            </div>
+
+        </section>
+    </main>
+
+    <section id="modal-contact" class="modal-container active">
+        <div class="model-box">
+            <div class="model-content">
+            <p>@jose__975</p>
+           </div>
+           <button id="btn-modal" class="form-btn">Fechar</button>
+        </div>
+    </section>
+
+    <script type="module" src="/js/jfviacep.js"></script>
+</body>
+</html>
